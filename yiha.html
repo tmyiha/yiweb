@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<title>Welcome to my world!</title>
+	<meta charset="utf-8" />
+
+	<link rel="stylesheet" type="text/css" href="css/yi.css">
+	<link rel="stylesheet" type="text/css" href="css/buttons.css">
+	
+	<script src="js/test.js"></script>
+	<script src="http://code.angularjs.org/angular-1.0.1.min.js"></script>
+</head>
+<body ng-controller="ImagesCtrl">
+	<h1>Snapshots</h1>
+	<ul>
+		
+		<li>
+			<a href="images/树叶.jpg" onclick="showPic(this); return false;">树叶</a>
+		</li>
+		<li>
+			<a href="images/wust.jpg" onclick="showPic(this); return false;">wust</a>
+		</li>
+		<li>
+			<a href="images/geyou.jpg" onclick="showPic(this); return false;">geyou</a>
+		</li>
+  	</ul>
+  <!-- <button class="button button-highlight button-square button-large"><i class="fa fa-plus"></i></button>
+  <button class="button button-highlight button-box button-large"><i class="fa fa-plus"></i></button>
+  <button class="button button-highlight button-circle button-large"><i class="fa fa-plus"></i></button>
+	<button class="button button-highlight button-box button-large" click="show()">弹出</button>
+   -->
+	
+	<img id="placeholder" src="images/占位.gif" alt="my image gallery"/>
+	<div>
+	<ul>
+   		 <li ng-repeat="yimage in yimages">
+    		<img class="nvpic" ng-src="{{yimage}}" ng-click="setImage(yimage)"/>
+   		 </li>
+  	</ul>
+  	</div>
+  	<img ng-src="{{mainImageUrl}}" class="bigpic">
+	<div>
+		<li>
+			<a href="http://www.bootcss.com/" class="button button-primary button-small">Go</a>
+  			<a href="http://www.bootcss.com/" class="button button-primary button-rounded button-small">Go</a>
+ 			<a href="http://www.bootcss.com/" class="button button-primary button-pill button-small">Go</a>		
+  		</li>
+  	</div>
+</body>
+</html>
