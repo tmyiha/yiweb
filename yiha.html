@@ -39,11 +39,13 @@
   	</ul>
   	</div>
   	<img ng-src="{{mainImageUrl}}" class="bigpic">
+
+  	<iframe src="{{mainWebUrl}}"></iframe>
 	<div>
 		<li>
-			<a href="http://www.bootcss.com/" class="button button-primary button-small">Go</a>
-  			<a href="http://www.bootcss.com/" class="button button-primary button-rounded button-small">Go</a>
- 			<a href="http://www.bootcss.com/" class="button button-primary button-pill button-small">Go</a>		
+			<a ng-click=seturl("http://www.bootcss.com/") class="button button-primary button-small">bootcss</a>
+  			<a ng-click=seturl("http://www.baidu.com/") class="button button-primary button-rounded button-small">baidu</a>
+ 			<a ng-click=seturl("http://cn.vuejs.org/") class="button button-primary button-pill button-small">vuejs</a>		
   		</li>
   	</div>
 </body>

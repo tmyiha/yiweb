@@ -20,4 +20,9 @@ $scope.mainImageUrl = "images/占位2.gif" ;
  $scope.setImage = function(imageUrl) {
     $scope.mainImageUrl = imageUrl;
   }
+
+$scope.mainWebUrl = "http://cn.vuejs.org/";
+$scope.seturl = function(webUrl) {
+    $scope.mainWebUrl = webUrl;
+  }
 }
