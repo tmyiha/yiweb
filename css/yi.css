@@ -30,10 +30,14 @@ img{
 	width: 600px;
 }
 iframe{
-	height: 400px;
+	height: 600px;
 	width: 600px;
 }
 .nvpic{
 	height: 100px;
 	width: 160px;
+}
+#flappy{
+	height: 600px;
+	width: 600px;
 }
